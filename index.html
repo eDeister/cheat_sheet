@@ -1,0 +1,41 @@
+<!--
+    Name: Ethan Deister, Sajal Khadgi
+    Description: A cheet-sheet for github collaboration and useful commands
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Cheet-Sheet</title>
+</head>
+<body>
+    <div class="content-justify-center">
+      <h2>Ideal Scenario</h2>
+      <p>
+          In the ideal scenario, edits are made sequentially and by one team member at a time.
+          For example, if someone wanted to make changes to multiple pages, they would first ask
+          if anyone was currently working on the website. Assuming the answer is no, they would then
+          pull the latest changes from the repo using the "git pull" command in their SSH session.
+          Lastly, they download the changes from WHFS, make their changes, and add-commit-push to github.
+          Then repeat for the next student.
+      </p>
+      <h2>Undo changes before git commit</h2>
+      <p>
+          To revert changes before a commit is made, a four-step process must be followed:
+      </p>
+      <ol>
+          <li>Delete the file with the unwanted changes from the local directory (left side of PHPStorm.)
+              This should automatically delete the page from WHFS (right side) but if it didn't, the page
+              can be deleted manually.</li>
+          <li>Execute a checkout in the terminal: "git checkout -- filename"</li>
+          <li>Get the latest changes from github using git pull</li>
+          <li>Refresh the remote host connection in PHPStorm and download the files.</li>
+      </ol>
+      <h2></h2>
+    </div>
+</body>
+</html>
